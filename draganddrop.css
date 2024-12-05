@@ -1,0 +1,205 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: pink;
+  line-height: 1.6;
+  background-image: url('store.jpg');
+
+}
+
+h1 {
+  text-align: center;
+  color: pink;
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+/* Header Styles */
+
+header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Draggable Container Styles */
+
+.draggableContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Box Styles */
+
+.box {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  background-color: deepskyblue;
+  text-align: center;
+  padding: 20px;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  cursor: move;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.box:hover {
+  background-color: gainsboro;
+}
+
+/* Droppable Container Styles */
+
+.droppableContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* Droppable Styles */
+
+.droppable {
+  width: 300px;
+  height: 250px;
+  margin: 10px;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px;
+  border: 4px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.droppable.matched {
+  background-color: deepskyblue;
+  border-color: pink;
+}
+
+.droppable.incorrect {
+  background-color: gray;
+  border-color: salmon;
+}
+
+/* Remarks Styles */
+
+#remarks {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: center;
+}
+
+/* Custom Box Styles */
+
+.box#hotdog {
+  background-image: url('hotdog.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#cropped {
+  background-image: url('cropped.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#watch {
+  background-image: url('watch.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#gray {
+  background-image: url('gray.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#tv {
+  background-image: url('tv.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#phone {
+  background-image: url('phone.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#book {
+  background-image: url('book.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#chair {
+  background-image: url('chair.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#shoes {
+  background-image: url('shoes.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+
+.box#red {
+  background-image: url('red.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: green;
+}
+/* Additional Styles */
+
+.box:active {
+  transform: scale(0.9);
+}
+
+.droppable:active {
+  transform: scale(0.9);
+}
+
+.droppable.matched::after {
+  content: "Matched!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: pink;
+}
+
+.droppable.incorrect::after {
+  content: "Incorrect!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+  font-weight: bold;
+  color: salmon;
+}
